@@ -29,7 +29,7 @@ module.exports = {
   },
   "env": {
     "browser": true,
-    "jest": true, // test is not defined
-    "node": true // module is not defined
+    "jest": true,
+    "node": true 
   },
 };
