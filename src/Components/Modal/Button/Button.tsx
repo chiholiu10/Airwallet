@@ -1,5 +1,5 @@
 import { FC, useContext } from "react";
-import { Context, initialState } from "../../../Context/context";
+import { Context } from "../../../Context/context";
 import { ModalButton } from "./Button.styles";
 
 interface ButtonProps {
@@ -10,7 +10,8 @@ interface ButtonProps {
 export const Button: FC<ButtonProps> = ({ disabled, postData }) => {
     const context = useContext(Context);
     const { currentPage } = context.state;
-    const lastModalPage = currentPage === 1
+    const lastModalPage = currentPage === 1;
+
     const call = (fetchStatus: number) => {
         if(fetchStatus === 200) {
             context.dispatch({ type: "increment" });

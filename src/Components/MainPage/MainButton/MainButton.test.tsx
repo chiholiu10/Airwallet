@@ -4,10 +4,11 @@ import { shallow } from 'enzyme';
 test('find button element', () => {
   const callBack = jest.fn();
   const MainButtonComponent = shallow(<MainButton onClick={callBack}/>);
+
   expect(MainButtonComponent.exists()).toBeTruthy();
 });
 
-test('onclick button', () => {
+test('onclick button fires', () => {
   const callBack = jest.fn();
   const MainButtonComponent = shallow(<MainButton onClick={callBack}/>);
 
