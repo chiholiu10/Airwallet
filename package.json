@@ -21,7 +21,6 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "lint:css": "stylelint './src/**/*.ts'",
     "lint": "eslint .",
     "lint:fix": "eslint --fix --ext .js .",
     "eject": "react-scripts eject"
