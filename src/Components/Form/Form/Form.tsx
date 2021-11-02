@@ -1,8 +1,8 @@
 import { FC, useContext } from "react";
 import { EmailField } from "../EmailField/EmailField";
 import { NameField } from "../NameField/NameField";
-import validator from 'validator';
 import { Context } from "../../../Context/context";
+import validator from 'validator';
 
 export const Form: FC = () => {
     const context = useContext(Context);

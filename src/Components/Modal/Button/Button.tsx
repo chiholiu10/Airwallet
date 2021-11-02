@@ -28,7 +28,6 @@ export const Button: FC<ButtonProps> = ({ disabled, postData }) => {
         } catch (err) {
             console.error(err)
         }
-   
     }
 
     return (
