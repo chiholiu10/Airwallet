@@ -64,10 +64,6 @@ export const CSSreset = createGlobalStyle(
     img {
       border-style: none;
     }
-    // textarea:focus,
-    // input:focus {
-    //   outline: none;
-    // }
     button,
     input,
     optgroup,

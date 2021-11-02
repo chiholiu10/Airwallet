@@ -6,7 +6,7 @@ const theme: DefaultTheme = {
     white: "#fff",
     black: "#757575",
     grey: "#212121",
-    blue: "#e435",
+    blue: "#0096FF",
     red: "#FF0000"
   },
   // typography
