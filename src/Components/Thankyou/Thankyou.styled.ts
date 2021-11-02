@@ -5,8 +5,8 @@ export const ThankyouComponent = styled.div`
   flex-grow: 1;
   text-align: center;
   font-size: 20px;
-  font-weight: ${theme.fontWeights.semiBold};
   display: flex;
   align-items: center;
   justify-content: center;
+  font-weight: ${theme.fontWeights.semiBold};
 `;

@@ -14,4 +14,4 @@ test("check if button fires onclick", () => {
   const wrapper = shallow(<Button postData={callBack} disabled={false} />)
   wrapper.find("button").simulate("click");
   expect(callBack).toHaveBeenCalledTimes(1)
-})
+});

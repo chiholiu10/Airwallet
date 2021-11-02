@@ -5,4 +5,4 @@ test("check if Thankyou element exists", () => {
   render(<Thankyou/>);  
   const thankyou = screen.getByTestId("thank-you");
   expect(thankyou).toBeInTheDocument();
-})
+});

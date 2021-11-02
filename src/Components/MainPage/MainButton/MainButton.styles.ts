@@ -8,9 +8,9 @@ export const OpenModalButton = styled.button`
   justify-content: center;
   width: 200px;
   height: 50px;
+  border-radius: 10px;
   background: ${theme.colors.grey};
   color: ${theme.colors.white};
-  border-radius: 10px;
 `;
 
 
