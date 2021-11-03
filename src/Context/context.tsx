@@ -12,6 +12,8 @@ export const initialState: State = {
     secondEmail: ""
 };
 
+
+
 export interface State {
     currentPage: number;
     openModal: boolean;
@@ -31,11 +33,9 @@ export interface Actions {
     | "closeModal"
     | "nameCheck" 
     | "emailCheck" 
-    | "firstEmail"
     | "secondEmail"
     | "fetchStatus"
     | "validateName"
-    | "validateFields";
 
     currentPage?: number;
     openModal?: boolean;

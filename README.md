@@ -18,11 +18,6 @@ In the project directory, you can run:
 * npm install 
 * npm run start
 
-### Built some cool components with nice UX, for instance:
-* dropdown select column in table build with vanilla css
-* dropdown select and accordiong do both contains arrow animation rotation
-* most of the components are built in vanilla css to increase performance and also improve ux
-
 ### Check on linting error
 * npm run lint
 
