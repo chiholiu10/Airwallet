@@ -12,8 +12,6 @@ export const initialState: State = {
     secondEmail: ""
 };
 
-
-
 export interface State {
     currentPage: number;
     openModal: boolean;
