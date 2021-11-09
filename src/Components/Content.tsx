@@ -7,16 +7,16 @@ interface PageNumber {
 }
 
 export const Content: FC<PageNumber> = ({ pageNumber }) => {
-    switch(pageNumber) {
-        case 0: 
+    switch (pageNumber) {
+        case 0:
             return (
-                <Form/>
-            )
-        case 1: 
+                <Form />
+            );
+        case 1:
             return (
-                <Thankyou/>
-            )
+                <Thankyou />
+            );
         default:
-            return <Form/>
+            return <Form />;
     }
 };

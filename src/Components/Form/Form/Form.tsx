@@ -6,9 +6,9 @@ import validator from 'validator';
 
 export const Form: FC = () => {
     const context = useContext(Context);
-    const { 
-        nameError, 
-        emailError, 
+    const {
+        nameError,
+        emailError,
         validateName,
         firstEmail,
         secondEmail
@@ -16,7 +16,7 @@ export const Form: FC = () => {
 
     const nameValidator = (nameCheck: string) => {
         if (/^\D*$/.test(nameCheck)) {
-            context.dispatch({ type: "validateName", validateName: nameCheck })
+            context.dispatch({ type: "validateName", validateName: nameCheck });
         }
     };
 
@@ -36,20 +36,20 @@ export const Form: FC = () => {
 
     return (
         <>
-            <NameField 
-                nameValidator={nameValidator} 
-                checkNameLength={checkNameLength} 
-                errorName={nameError} 
+            <NameField
+                nameValidator={nameValidator}
+                checkNameLength={checkNameLength}
+                errorName={nameError}
                 value={validateName}
             />
-            <EmailField 
-                checkEmailRegex={checkEmailRegex} 
-                errorEmail={emailError} 
-                valueFirstName={firstEmail} 
-                valueSecondName={secondEmail} 
-                getSecondEmail={getSecondEmail} 
+            <EmailField
+                checkEmailRegex={checkEmailRegex}
+                errorEmail={emailError}
+                valueFirstName={firstEmail}
+                valueSecondName={secondEmail}
+                getSecondEmail={getSecondEmail}
                 checkEmailConfirmation={firstEmail !== secondEmail}
             />
         </>
-    )
-}
+    );
+};

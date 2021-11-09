@@ -1,6 +1,6 @@
 import { createContext, Dispatch } from "react";
 
-export const initialState: State = { 
+export const initialState: State = {
     currentPage: 0,
     openModal: false,
     validated: false,
@@ -11,8 +11,6 @@ export const initialState: State = {
     firstEmail: "",
     secondEmail: ""
 };
-
-
 
 export interface State {
     currentPage: number;
@@ -27,15 +25,15 @@ export interface State {
 };
 
 export interface Actions {
-    type: 
-    'increment' 
-    | "openModal" 
+    type:
+    'increment'
+    | "openModal"
     | "closeModal"
-    | "nameCheck" 
-    | "emailCheck" 
+    | "nameCheck"
+    | "emailCheck"
     | "secondEmail"
     | "fetchStatus"
-    | "validateName"
+    | "validateName";
 
     currentPage?: number;
     openModal?: boolean;
@@ -49,50 +47,50 @@ export interface Actions {
 };
 
 export const reducer = (state: any, action: any) => {
-    switch(action.type) {
+    switch (action.type) {
         case "increment":
             return {
-                ...state, 
+                ...state,
                 currentPage: state.currentPage < 1 ? state.currentPage + 1 : state.currentPage
-            }
+            };
         case "openModal":
             return {
-                ...state, 
+                ...state,
                 openModal: true
-            }
+            };
         case "closeModal":
-            return initialState
+            return initialState;
         case "nameCheck":
             return {
                 ...state,
                 nameError: action.nameError,
                 currentName: action.currentName,
-            }
-        case "emailCheck": 
+            };
+        case "emailCheck":
             return {
                 ...state,
                 emailError: action.emailError,
                 firstEmail: action.firstEmail,
-            }
+            };
         case "secondEmail":
             return {
                 ...state,
                 secondEmail: action.secondEmail
-            }
-        case "validateName": 
+            };
+        case "validateName":
             return {
-                ...state, 
+                ...state,
                 validateName: action.validateName
-            }
-        case "fetchStatus": 
+            };
+        case "fetchStatus":
             return {
                 ...state,
                 fetchStatus: action.fetchStatus,
-            }
-        default: 
+            };
+        default:
             return state;
     }
-}
+};
 
 export interface ContextProps {
     state: State;
@@ -101,5 +99,5 @@ export interface ContextProps {
 
 export const Context = createContext<ContextProps>({
     state: initialState,
-    dispatch: () => {}
+    dispatch: () => { }
 });

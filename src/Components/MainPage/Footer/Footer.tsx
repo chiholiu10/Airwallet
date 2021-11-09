@@ -5,4 +5,4 @@ export const Footer: FC = () => (
     <FooterComponent data-testid="footer">
         Footer
     </FooterComponent>
-)
+);

@@ -8,16 +8,16 @@ interface NameFieldProps {
     value: string;
 }
 
-export const NameField: FC<NameFieldProps> = ({ nameValidator, checkNameLength, errorName, value}) => (
+export const NameField: FC<NameFieldProps> = ({ nameValidator, checkNameLength, errorName, value }) => (
     <FieldBlock>
-        <Input 
-            type="text"  
-            name="name" 
-            value={value} 
+        <Input
+            type="text"
+            name="name"
+            value={value}
             placeholder="Name"
-            onBlur={(e) => checkNameLength(e.target.value)} 
-            onChange={(e) => nameValidator(e.target.value)} 
+            onBlur={(e) => checkNameLength(e.target.value)}
+            onChange={(e) => nameValidator(e.target.value)}
             required
         /> {errorName && <Error>Min 3 characters </Error>}
     </FieldBlock>
-)
+);

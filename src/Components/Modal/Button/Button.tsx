@@ -13,24 +13,24 @@ export const Button: FC<ButtonProps> = ({ disabled, postData }) => {
     const lastModalPage = currentPage === 1;
 
     const call = (fetchStatus: number) => {
-        if(fetchStatus === 200) {
+        if (fetchStatus === 200) {
             context.dispatch({ type: "increment" });
-        } 
-        if(lastModalPage) {
+        }
+        if (lastModalPage) {
             context.dispatch({ type: "closeModal" });
-        } 
-    }
+        }
+    };
 
     const nextPage = async () => {
         try {
             const json = await postData(postData);
-            call(json)
+            call(json);
         } catch (err) {
-            console.error(err)
+            console.error(err);
         }
-    }
+    };
 
     return (
         <ModalButton data-testid="button-test" disabled={disabled} onClick={nextPage}>{lastModalPage ? "Close modal" : "Request an invite"}</ModalButton>
-    )
-}
+    );
+};

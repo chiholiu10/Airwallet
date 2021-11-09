@@ -7,4 +7,4 @@ interface ButtonProps {
 
 export const MainButton: FC<ButtonProps> = ({ onClick }) => (
   <OpenModalButton data-testid="button-element" onClick={() => onClick()}>Open Modal</OpenModalButton>
-)
+);

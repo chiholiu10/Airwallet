@@ -8,12 +8,12 @@ export const App: FC = () => {
   const contextValues = {
     state,
     dispatch
-  }
+  };
 
   return (
     <Context.Provider value={contextValues}>
       <MainApp />
     </Context.Provider>
   );
-}
+};
 

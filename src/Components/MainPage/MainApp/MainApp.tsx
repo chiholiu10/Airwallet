@@ -12,12 +12,12 @@ export const MainApp: FC = () => {
 
     return (
         <MainContainer>
-            <Nav/>
+            <Nav />
             <MainPage>
                 <MainButton onClick={openModal}>Open Modal</MainButton>
             </MainPage>
             <Modal />
             <Footer />
         </MainContainer>
-    )
+    );
 };

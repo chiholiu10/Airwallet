@@ -8,10 +8,10 @@ import theme from './styles/Theme';
 
 ReactDOM.render(
   <React.StrictMode>
-      <ThemeProvider theme={theme}>
-        <CSSreset />
-        <App />
-      </ThemeProvider>
+    <ThemeProvider theme={theme}>
+      <CSSreset />
+      <App />
+    </ThemeProvider>
   </React.StrictMode>,
   document.getElementById('root')
 );
