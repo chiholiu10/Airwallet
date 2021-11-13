@@ -23,8 +23,8 @@ export const Button: FC<ButtonProps> = ({ disabled, postData }) => {
 
     const nextPage = async () => {
         try {
-            const json = await postData(postData);
-            call(json);
+            const response = await postData(postData);
+            call(response);
         } catch (err) {
             console.error(err);
         }
